@@ -1,12 +1,12 @@
 scoreboard objectives add death deathCount "Death"
 scoreboard players set @a death 0
-execute as @a run scoreboard objectives setdisplay sidebar death
 
 scoreboard objectives add tick dummy
 scoreboard players set @a tick 0
 
 scoreboard objectives add minutes dummy "Minuten"
 scoreboard players set @a minutes 0
+execute as @a run scoreboard objectives setdisplay sidebar minutes
 
 clear @a
 gamemode survival @a
