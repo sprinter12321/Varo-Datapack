@@ -1,5 +1,11 @@
 scoreboard players set @a tick 0
 scoreboard players set @a minutes 0
+scoreboard players set @a death 0
+
+gamerule doDaylightCycle true
+gamerule doWeatherCycle true
+weather clear
+time set 0
 
 clear @a
 gamemode survival @a
