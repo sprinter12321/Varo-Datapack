@@ -1,4 +1,5 @@
 scoreboard players set @a tick 0
+scoreboard players set @a seconds 0
 scoreboard players set @a minutes 0
 scoreboard players set @a death 0
 
