@@ -9,6 +9,6 @@ execute as @a[scores={death=1..},gamemode=!spectator,tag=!master] if score @s mi
 
 execute as @a in minecraft:the_nether if score @s minutes matches 90.. if score @s tick matches 0 run damage @s 1
 
-execute as @r if score @s minutes matches 15 if score @s tick matches 0 run function varo:pvp.setup
+execute as @r if score @s minutes matches 15 if score @s seconds matches 0 if score @s tick matches 0 run function varo:pvp.setup
 
 scoreboard players add @a tick 1
