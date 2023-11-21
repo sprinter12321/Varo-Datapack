@@ -3,8 +3,8 @@ execute as @r if score @s tick matches 20 run scoreboard players set @a tick 0
 execute as @r if score @s seconds matches 60 run scoreboard players add @a minutes 1
 execute as @r if score @s seconds matches 60 run scoreboard players set @a seconds 0
 
-execute as @a[scores={death=1..}] if score @s minutes matches ..15 run effect give @s resistance 10 255
-execute as @a[scores={death=1..}] if score @s minutes matches ..15 run scoreboard players set @s death 0
+execute positioned 0 315 0 as @a[scores={death=1..},distance=..5] if score @s minutes matches ..15 run effect give @s resistance 10 255
+execute positioned 0 315 0 as @a[scores={death=1..},distance=..5] if score @s minutes matches ..15 run scoreboard players set @s death 0
 execute as @a[scores={death=1..},gamemode=!spectator,tag=!master] if score @s minutes matches 15.. run gamemode spectator
 
 execute as @r if score @s minutes matches 85 if score @s seconds matches 0 if score @s tick matches 0 run title @a title "Nether schließt in 5 Minuten"
