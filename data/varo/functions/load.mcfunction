@@ -19,7 +19,6 @@ gamerule doWeatherCycle false
 gamerule pvp false
 difficulty normal
 
-function varo:spawn.setup
 function varo:team.setup
 
 tellraw @a "Varo Datapack geladen"
